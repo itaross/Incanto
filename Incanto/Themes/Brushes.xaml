@@ -1,0 +1,14 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Dark theme: basic colors definition-->
+    <Color x:Key="dark:background_base_color" A="#ff" R="#15" G="#15" B="#15"></Color>
+    <Color x:Key="dark:foreground_base_color" A="#ff" R="#fd" G="#fd" B="#fd"></Color>
+    <Color x:Key="dark_basic_color_base" A="#ff" R="#30" G="#da" B="#ff"></Color>
+    <SolidColorBrush x:Key="dark_background_base_solidbrush" Color="{DynamicResource dark:background_base_color}"></SolidColorBrush>
+    <SolidColorBrush x:Key="dark_foreground_base_solidbrush" Color="{DynamicResource dark:foreground_base_color}"></SolidColorBrush>
+
+    <!-- Light theme: basic colors definition-->
+    <SolidColorBrush x:Key="light_background_base" Color="#fdfdfd"></SolidColorBrush>
+    <SolidColorBrush x:Key="light_foreground_base" Color="#202020"></SolidColorBrush>
+</ResourceDictionary>

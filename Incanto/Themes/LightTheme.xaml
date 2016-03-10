@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls ="clr-namespace:Incanto.Controls">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Brushes.xaml"></ResourceDictionary>
+    </ResourceDictionary.MergedDictionaries>
+
+    <SolidColorBrush x:Key="background_base_solidbrush" Color="{DynamicResource dark_background_base_color}"></SolidColorBrush>
+
+    <Style TargetType="{x:Type Window}">
+        <Setter Property="Background" Value="{DynamicResource ResourceKey=light_background_base}"></Setter>
+        <Setter Property="Foreground" Value="{DynamicResource ResourceKey=light_foreground_base}"></Setter>
+    </Style>
+</ResourceDictionary>

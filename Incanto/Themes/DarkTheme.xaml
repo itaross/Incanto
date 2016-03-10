@@ -4,8 +4,10 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="Brushes.xaml"></ResourceDictionary>
     </ResourceDictionary.MergedDictionaries>
+    
+    <SolidColorBrush x:Key="background_base_solidbrush" Color="{DynamicResource light_background_base_color}"></SolidColorBrush>
 
-    <Style TargetType="controls:LightButton">
+    <Style TargetType="{x:Type Window}">
         <Setter Property="Background" Value="{DynamicResource ResourceKey=dark_background_base}"></Setter>
         <Setter Property="Foreground" Value="{DynamicResource ResourceKey=dark_foreground_base}"></Setter>
     </Style>

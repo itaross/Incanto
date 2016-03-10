@@ -4,23 +4,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Incanto.Controls"
+             xmlns:theme="clr-namespace:Incanto.Themes"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
-    <local:IncantoControl.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="../Themes/DarkTheme.xaml"></ResourceDictionary>
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-    </local:IncantoControl.Resources>
-    <Grid>
-        <Rectangle Margin="0" Stroke="Transparent" StrokeThickness="8">
-            <Rectangle.Fill>
-                <SolidColorBrush Color="{DynamicResource dark:background_base_color}"/>
-            </Rectangle.Fill>
-            <Rectangle.Effect>
-                <DropShadowEffect Color="{DynamicResource dark_basic_color_base}" BlurRadius="20" Direction="0" ShadowDepth="0"/>
-            </Rectangle.Effect>
-        </Rectangle>
-    </Grid>
+             d:DesignHeight="300" d:DesignWidth="300" BorderBrush="White">
+
 </local:IncantoControl>

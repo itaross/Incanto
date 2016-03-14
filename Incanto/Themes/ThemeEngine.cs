@@ -27,7 +27,7 @@ namespace Incanto.Themes
             obj.SetValue(CurrentThemeDictionaryProperty, value);
         }
 
-        private static void CurrentThemeDictionaryChanged(DependencyObject obj, DependencyPropertyChangedEventArgs e)
+        public static void CurrentThemeDictionaryChanged(DependencyObject obj, DependencyPropertyChangedEventArgs e)
         {
             if (obj is FrameworkElement) // works only on FrameworkElement objects
             {

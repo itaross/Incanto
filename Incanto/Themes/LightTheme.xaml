@@ -5,10 +5,12 @@
         <ResourceDictionary Source="Brushes.xaml"></ResourceDictionary>
     </ResourceDictionary.MergedDictionaries>
 
-    <SolidColorBrush x:Key="background_base_solidbrush" Color="{DynamicResource dark_background_base_color}"></SolidColorBrush>
-
-    <Style TargetType="{x:Type Window}">
-        <Setter Property="Background" Value="{DynamicResource ResourceKey=light_background_base}"></Setter>
-        <Setter Property="Foreground" Value="{DynamicResource ResourceKey=light_foreground_base}"></Setter>
+    <Style TargetType="{x:Type controls:IncantoControl}" BasedOn="{x:Null}">
+        <Setter Property="Background" Value="{DynamicResource ResourceKey=light_background_base_solidbrush}"></Setter>
     </Style>
+
+    <Style TargetType="{x:Type Grid}" BasedOn="{x:Null}">
+        <Setter Property="Background" Value="{DynamicResource ResourceKey=light_background_base_solidbrush}"></Setter>
+    </Style>
+
 </ResourceDictionary>
